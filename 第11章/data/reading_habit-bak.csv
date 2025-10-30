@@ -1,0 +1,53 @@
+Age,Sex,Marital-status,Education,Employement,printed-E-books
+51,Female,Divorced,College graduate,Employed full-time,Yes
+50,Male,Married,College graduate,Employed full-time,Yes
+49,Female,Married,College graduate,Employed full-time,No
+65,Female,Married,High school graduate,Retired,No
+62,Female,Married,College graduate,Retired,Yes
+67,Male,Married,College graduate,Employed full-time,No
+65,Female,Divorced,High school graduate,Employed part-time,Yes
+60,Female,Married,High school graduate,Employed full-time,No
+55,Female,Married,College graduate,Employed full-time,No
+78,Female,Widowed,High school graduate,Retired,No
+56,Female,Divorced,High school graduate,Employed full-time,Yes
+67,Male,Married,College graduate,Retired,No
+63,Female,Married,High school graduate,Retired,Yes
+60,Male,Married,High school graduate,Retired,Yes
+54,Male,Married,College graduate,Employed full-time,Yes
+54,Male,Divorced,College graduate,Employed full-time,Yes
+53,Female,Divorced,High school graduate,Employed part-time,No
+61,Female,Married,College graduate,Employed part-time,Yes
+56,Female,Married,College graduate,Retired,Yes
+55,Male,Married,High school graduate,Retired,No
+43,Male,Married,College graduate,Employed full-time,Yes
+39,Male,Married,High school graduate,Employed full-time,No
+87,Female,Married,College graduate,Retired,No
+86,Male,Married,High school graduate,Retired,Yes
+70,Female,Married,High school graduate,Retired,Yes
+49,Male,Married,College graduate,Employed full-time,No
+48,Male,Married,High school graduate,Employed full-time,Yes
+33,Female,Married,College graduate,Employed full-time,No
+66,Female,Married,College graduate,Retired,No
+65,Female,Married,College graduate,Employed part-time,Yes
+50,Female,Married,College graduate,Employed full-time,No
+40,Male,Married,College graduate,Employed full-time,No
+31,Male,Married,High school graduate,Employed full-time,No
+87,Female,Widowed,College graduate,Retired,No
+81,Male,Married,College graduate,Retired,Yes
+60,Female,Married,College graduate,Employed full-time,No
+91,Female,Widowed,High school graduate,Retired,Yes
+67,Male,Divorced,High school graduate,Retired,Yes
+39,Female,Married,College graduate,Employed full-time,No
+57,Female,Married,College graduate,Employed full-time,No
+67,Male,Married,High school graduate,Retired,Yes
+64,Female,Widowed,High school graduate,Employed full-time,Yes
+58,Male,Married,College graduate,Employed full-time,Yes
+57,Male,Married,College graduate,Retired,Yes
+56,Male,Married,College graduate,Employed full-time,Yes
+56,Male,Married,High school graduate,Employed full-time,Yes
+55,Female,Married,College graduate,Employed part-time,Yes
+54,Female,Married,College graduate,Employed full-time,Yes
+53,Male,Single,High school graduate,Employed full-time,Yes
+53,Female,Married,College graduate,Retired,Yes
+62,Male,Married,College graduate,Employed full-time,No
+74,Female,Married,High school incomplete,Retired,Yes
