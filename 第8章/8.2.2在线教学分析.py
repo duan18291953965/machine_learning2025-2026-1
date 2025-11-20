@@ -13,7 +13,7 @@ from sklearn.model_selection import GridSearchCV #导入网格式参数调优模
 from sklearn.preprocessing import StandardScaler #导入特征标准化库
 from sklearn.decomposition import PCA #导入主成分分析模块
 #加载数据
-data = pd.read_csv('.\\data\\students_adaptability_level_online_education.csv',encoding=u'gbk')
+data = pd.read_csv('.\\students_adaptability_level_online_education.csv',encoding=u'gbk')
 #数据编码
 edu_encoding = {
     'Gender' : { 

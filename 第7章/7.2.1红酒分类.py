@@ -30,8 +30,8 @@ x_ = scaler.fit_transform(x)
 #将数据划分为训练数据与测试数据
 x_train,x_test,y_train,y_test = train_test_split(x_,y,test_size=0.3, random_state=10)
 # 构建决策树模型[不同深度]
-depth_list = np.arange(2,10,1)
-Acc_Train = [] 
+depth_list = np.arange(2,10,1)# 2 3 4 5 6 7 8 9
+Acc_Train = []
 Acc_Test = []
 for i in depth_list:
     DT = DecisionTreeClassifier(max_depth=i, random_state=10)

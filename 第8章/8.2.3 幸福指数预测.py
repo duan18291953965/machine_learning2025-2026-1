@@ -14,7 +14,7 @@ from sklearn.svm import SVR #导入SVM回归模块
 from sklearn.metrics import r2_score #导入R2分数模块
 from sklearn.preprocessing import StandardScaler #导入数据标准化模块
 #加载数据
-data_path = 'D://529857988//wangwei@zknu.cn//data_ml//part//'
+data_path = './/'
 data = pd.read_csv(data_path + 'happyscore_income.csv',encoding=u'gbk')
 print('样本数与特征数',data.shape)
 # 特征相关性分析

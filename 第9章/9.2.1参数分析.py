@@ -21,6 +21,7 @@ for i in K:
     km = KMeans(n_clusters=i)
     km.fit(x)
     m_cost.append(sum(np.min(cdist(x,km.cluster_centers_,'euclidean'),axis=1))/x.shape[0])
+    print("{}的代价值是".format(i),m_cost[i-1])
 #显示代价值随K值的变化曲线
 plt.figure()
 plt.plot(K,m_cost,'ro-')
@@ -54,7 +55,7 @@ plt.figure()
 plt.scatter(x[y_pred==0,0], x[y_pred==0,1], s=50, c='r',linewidths=1,edgecolors='k', label='Class1')
 plt.scatter(x[y_pred==1,0], x[y_pred==1,1], s=50, c='m',linewidths=1,edgecolors='k', label='Class2')
 plt.scatter(x[y_pred==2,0], x[y_pred==2,1], s=50, c='g',linewidths=1,edgecolors='k', label='Class3')
-plt.scatter(x[y_pred==3,0], x[y_pred==3,1], s=50, c='y',linewidths=1,edgecolors='k', label='Class4')  
+plt.scatter(x[y_pred==3,0], x[y_pred==3,1], s=50, c='y',linewidths=1,edgecolors='k', label='Class4')
 plt.scatter(centroids[:,0],centroids[:,1],marker='s',s=50,c='black')#聚类中心
 plt.legend(loc='best')
 plt.grid(True)

@@ -20,7 +20,7 @@ from sklearn.preprocessing import StandardScaler
 #导入 R2 分数模块 
 from sklearn.metrics import r2_score 
 #加载数据 
-data = pd.read_csv('D:\\机器学习原理与应用教材课件和部分源码 - 副本\\源码\\第7章\\Salary_Data.csv') 
+data = pd.read_csv(r'D:\yzuan\2025-下\机器学习\源码与数据\章节源码与数据\第7章\Salary_Data.csv')
 #数据编码 
 EC = { 
  'Gender' : { 

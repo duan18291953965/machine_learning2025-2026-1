@@ -42,7 +42,7 @@ print('样本基本信息:',x.shape)
 x_pca = PCA(n_components=0.98).fit_transform(x)
 print('样本基本信息(PCA):',x_pca.shape)
 #利用KMeans算法进行聚类
-km = KMeans(n_clusters=3, random_state=0).fit(x_pca)  
+km = KMeans(n_clusters=3, random_state=0).fit(x_pca)
 #输出聚类结果
 print ('聚类结果:',km.labels_)
 #输出每类对应的文本
