@@ -20,7 +20,8 @@ from sklearn.preprocessing import StandardScaler
 # 导入主成分分析
 from sklearn.decomposition import PCA
 #加载数据
-data = pd.read_csv('D:\\机器学习原理与应用教材课件和部分源码 - 副本\\源码\\第9章\\Sleep_health_and_lifestyle_dataset.csv')
+data = pd.read_csv('Sleep_health_and_lifestyle_dataset.csv')
+data = data.dropna()
 data['BMI Category'].replace({'Normal':0,'Normal Weight':0,'Overweight':1,'Obese':2},inplace = True)
 data['Sleep Disorder'].replace({'None':0,'Sleep Apnea':1,'Insomnia':2},inplace = True)
 # 特征与目标之间的相关性
@@ -38,7 +39,7 @@ y = data['Sleep Disorder']
 corr = x[x.columns[0:]].corr()
 plt.figure(figsize=(10,8))
 ax = sns.heatmap(
-    corr, 
+    corr,
     vmin=-1, vmax=1, center=0,
     cmap=sns.diverging_palette(20, 220, n=200),
     square=False, annot=True,fmt='.1f')
@@ -47,6 +48,7 @@ ax.set_xticklabels(
     rotation=30,
     horizontalalignment='right'
 )
+plt.show()
 #数据标准化
 scaler = StandardScaler()
 x = scaler.fit_transform(x)
@@ -55,7 +57,7 @@ K = np.arange(1,10)
 Loss = []
 for i in K:
     KM = KMeans(n_clusters=i, max_iter=100).fit(x)
-    Loss.append(KM.inertia_ / x.shape[0]) 
+    Loss.append(KM.inertia_ / x.shape[0])
 plt.figure()
 plt.plot(range(1, 10), Loss, c='r', marker="o" )
 plt.xlabel('K')

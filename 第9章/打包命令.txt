@@ -1,0 +1,1 @@
+pyinstaller -F --clean --add-data "Sleep_health_and_lifestyle_dataset.csv;." "9.2.3_self.py"

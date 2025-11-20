@@ -10,8 +10,13 @@ from sklearn.cluster import KMeans
 from sklearn.datasets import load_sample_image
 from sklearn.utils import shuffle
 from time import time
+
+from transformers.image_utils import load_image
+
 # 加载图像
-china = load_sample_image("china.jpg")
+#china = load_sample_image("china.jpg")
+china = load_image("china.jpg")
+#C:\Users\Lenovo\AppData\Local\Programs\Python\Python38\lib\site-packages\sklearn\datasets\images\china.jpg
 china = np.array(china, dtype=np.float64) / 255 
 plt.figure(1)
 plt.axis("off")
@@ -46,4 +51,4 @@ china_new_2 = KM.cluster_centers_[labels].reshape(china.shape[0],china.shape[1],
 plt.figure(3)
 plt.axis("off")
 plt.imshow(china_new_2)
-
+plt.show()
